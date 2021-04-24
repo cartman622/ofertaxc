@@ -1,0 +1,85 @@
+header{
+	width:100%;
+	background: #DCFBFF;
+	height: 92px;
+	box-sizing:border-box;
+}
+/* para el encabezado debajo del menu*/
+.ancho{
+	width: 90%;
+	height: 92px;
+	background:#DCFBFF;
+	margin:auto;
+	box-sizing:border-box;
+}
+/* para el encabezado a un lado del logo*/
+.logo{
+	width: 20%;
+	height: 70px;
+	background:#DCFBFF;
+	margin:auto;
+	float:left;
+	box-sizing:border-box;
+}
+
+/* para quitar margenes de los lados de barra menu */
+ *{
+	 margin:0;
+	 padding: 0;
+ }
+ 
+/* para poner horizontal lo que hay en el menu*/
+nav {
+	background-color:#0B610B;
+	width: 100%
+}
+
+/* para centrar menu */
+nav ul {
+	
+	float: left; 
+	 display: flex;
+	/* box-sizing:border-box; */
+}
+/* para color de sombreado de menu */
+/* nav ul li a:hover{ */
+	/* color:#0B610B; */
+	/* box-sizing:border-box; */
+/* } */
+/* para que no tenga bulets */
+nav ul li{
+	float: left;
+	list-style: none;
+	position: relative;
+}
+/* para centrar y dar formato al menu  el text-decoration es para quitar las url del menu*/
+nav ul li  a{
+	display: block;
+	padding: 0 2rem;
+	line-height: 5rem;
+	color: #030303;
+	text-decoration: none;
+}
+
+/* para que no se vea con display: none ..  dar formato al submenu*/
+nav ul li ul{
+	display: none;
+	position: absolute;
+	background-color:#1C1C1C;
+	border: 1px solid #1C1C1C;
+}
+
+/* para que se muestre el submenu con hover*/
+nav ul li:hover ul{
+	display: block;
+}
+/* para que el texto no se valla a dos lineas*/
+nav ul li ul li a{
+	padding: 1rem 2rem;
+	line-height: unset;
+	white-space: nowrap;
+}
+/* para sombreado de el submenu*/
+nav ul li ul li a:hover{
+	background-color: #0B610B;
+}
